@@ -19,10 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/auth', require('./routes/authRoutes'));
-app.use('/auth/providers', require('./routes/serviceProviderRoutes'));
-app.use('/auth/provider-applications', require('./routes/providerApplicationRoutes'));
-app.use('/auth/bookings', require('./routes/bookingRoutes'));
-app.use('/auth/reviews', require('./routes/reviewRoutes'));
+app.use('/providers', require('./routes/serviceProviderRoutes'));
+app.use('/provider-applications', require('./routes/providerApplicationRoutes'));
+app.use('/bookings', require('./routes/bookingRoutes'));
+app.use('/reviews', require('./routes/reviewRoutes'));
 
 // Health check route
 app.get('/health', (req, res) => {
