@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://fixly-d3hr.onrender.com/api'
 });
 
 // Add token to requests if available
