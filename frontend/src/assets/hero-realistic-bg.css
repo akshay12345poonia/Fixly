@@ -1,0 +1,91 @@
+/* Realistic photographic-style background for hero section */
+.hero-photo-bg {
+  background: 
+    /* Professional service worker overlay */
+    linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.7) 50%, rgba(51, 65, 85, 0.6) 100%),
+    
+    /* Simulated depth and lighting */
+    radial-gradient(ellipse at 30% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 60%),
+    
+    /* Tool and equipment silhouettes */
+    radial-gradient(circle at 15% 30%, rgba(234, 179, 8, 0.08) 0%, transparent 30%),
+    radial-gradient(circle at 85% 70%, rgba(239, 68, 68, 0.06) 0%, transparent 25%),
+    
+    /* Professional workspace texture */
+    linear-gradient(45deg, 
+      rgba(30, 58, 138, 0.9) 0%, 
+      rgba(67, 56, 202, 0.85) 25%, 
+      rgba(99, 102, 241, 0.8) 50%, 
+      rgba(139, 92, 246, 0.75) 75%, 
+      rgba(168, 85, 247, 0.7) 100%
+    );
+}
+
+/* Photographic elements overlay */
+.hero-photo-elements {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    /* Simulated bokeh effects */
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 60% 70%, rgba(255, 255, 255, 0.08) 3px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+    
+    /* Subtle grid pattern like workshop floor */
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  
+  background-size: 
+    300px 300px,
+    400px 400px, 
+    200px 200px,
+    350px 350px,
+    50px 50px,
+    50px 50px;
+  
+  background-position:
+    20% 30%,
+    60% 70%,
+    80% 20%,
+    40% 80%,
+    0 0,
+    0 0;
+}
+
+/* Professional service icons as background elements */
+.hero-service-icons {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image:
+    /* Wrench silhouette */
+    radial-gradient(ellipse 40px 8px at 15% 25%, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
+    radial-gradient(ellipse 8px 40px at 15% 25%, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
+    
+    /* Hammer silhouette */
+    radial-gradient(ellipse 30px 6px at 85% 75%, rgba(255, 255, 255, 0.6) 0%, transparent 100%),
+    radial-gradient(ellipse 6px 20px at 85% 75%, rgba(255, 255, 255, 0.6) 0%, transparent 100%),
+    
+    /* Screwdriver */
+    radial-gradient(ellipse 25px 4px at 25% 80%, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
+    
+    /* Paint brush */
+    radial-gradient(ellipse 20px 5px at 75% 20%, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+}
+
+/* Depth and professional lighting */
+.hero-professional-lighting {
+  position: absolute;
+  inset: 0;
+  background: 
+    /* Main light source from top-left */
+    radial-gradient(ellipse 60% 40% at 20% 10%, rgba(255, 255, 255, 0.08) 0%, transparent 70%),
+    
+    /* Secondary light from right */
+    radial-gradient(ellipse 40% 60% at 85% 30%, rgba(168, 85, 247, 0.06) 0%, transparent 60%),
+    
+    /* Ambient workshop lighting */
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 40%, rgba(0, 0, 0, 0.1) 100%);
+}
