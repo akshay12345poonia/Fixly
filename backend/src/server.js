@@ -18,14 +18,14 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/providers', require('./routes/serviceProviderRoutes'));
-app.use('/api/provider-applications', require('./routes/providerApplicationRoutes'));
-app.use('/api/bookings', require('./routes/bookingRoutes'));
-app.use('/api/reviews', require('./routes/reviewRoutes'));
+app.use('/auth', require('./routes/authRoutes'));
+app.use('/auth/providers', require('./routes/serviceProviderRoutes'));
+app.use('/auth/provider-applications', require('./routes/providerApplicationRoutes'));
+app.use('/auth/bookings', require('./routes/bookingRoutes'));
+app.use('/auth/reviews', require('./routes/reviewRoutes'));
 
 // Health check route
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.json({ message: 'Fixly API is running!' });
 });
 
